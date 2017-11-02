@@ -1,0 +1,23 @@
+.header-main {
+	min-height: 500px;
+	width: 100%;
+	background-image: url('../img/screenshot.png');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+
+	&::after{
+		content:'';
+		position: absolute;
+		top:0;
+		right:0;
+		height: 100%;
+		width: 100%;
+		background: $white-gradient;
+    	background: -webkit-linear-gradient($white-gradient, $white-gradient-s); /* For Safari 5.1 to 6.0 */
+    	background: -o-linear-gradient($white-gradient, $white-gradient-s); /* For Opera 11.1 to 12.0 */
+    	background: -moz-linear-gradient($white-gradient, $white-gradient-s); /* For Firefox 3.6 to 15 */
+    	background: linear-gradient($white-gradient, $white-gradient-s); /* Standard syntax */
+	}
+}

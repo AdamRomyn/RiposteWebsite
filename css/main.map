@@ -1,0 +1,20 @@
+{
+	"version": 3,
+	"file": "../sass/main.css",
+	"sources": [
+		"../sass/main.scss",
+		"../sass/base/_colors.scss",
+		"../sass/base/_defaults.scss",
+		"../sass/components/_header.scss",
+		"../sass/components/_navigation.scss"
+	],
+	"sourcesContent": [
+		"@import 'base/colors.scss';\r\n@import 'base/defaults.scss';\r\n@import 'components/header.scss';\r\n@import 'components/navigation';\r\n\r\n",
+		"//GRADIENTS\r\n//==================================================\r\n$white-gradient: rgba(255,255,255,1);\r\n$white-gradient-s: rgba(255,255,255,0.2);\r\n\r\n//BASE COLORS\r\n//==================================================\r\n$grey: #444444;",
+		"body{\r\n\tpadding: 0;\r\n\tmargin: 0;\r\n\tfont-family: lato, san-serif, 'segoe-ui-light'\r\n}",
+		".header-main {\r\n\tmin-height: 500px;\r\n\twidth: 100%;\r\n\tbackground-image: url('../img/screenshot.png');\r\n\tbackground-position: center;\r\n\tbackground-repeat: no-repeat;\r\n\tbackground-size: cover;\r\n\tposition: relative;\r\n\r\n\t&::after{\r\n\t\tcontent:'';\r\n\t\tposition: absolute;\r\n\t\ttop:0;\r\n\t\tright:0;\r\n\t\theight: 100%;\r\n\t\twidth: 100%;\r\n\t\tbackground: $white-gradient;\r\n    \tbackground: -webkit-linear-gradient($white-gradient, $white-gradient-s); /* For Safari 5.1 to 6.0 */\r\n    \tbackground: -o-linear-gradient($white-gradient, $white-gradient-s); /* For Opera 11.1 to 12.0 */\r\n    \tbackground: -moz-linear-gradient($white-gradient, $white-gradient-s); /* For Firefox 3.6 to 15 */\r\n    \tbackground: linear-gradient($white-gradient, $white-gradient-s); /* Standard syntax */\r\n\t}\r\n}",
+		".menu {\r\n\tposition: fixed;\r\n\tposition: absolute;\r\n\ttop: 0;\r\n\tleft: 0;\r\n\twidth: 100%;\r\n\theight: 100px;\r\n\tz-index: 5;\r\n\t.menu-inner{\r\n\t\tpadding: 0 50px;\r\n\t}\r\n\t.menu-title{\r\n\t\tfloat: left;\r\n\t\tfont-size: 32px;\r\n\t\tcolor: $grey;\r\n\t\tfont-weight: 400;\r\n\t\tline-height: 100px;\r\n\t}\r\n\t.menu-items{\r\n\t\tfloat: right;\r\n\t\tmargin: 0;\r\n\t\t.menu-item{\r\n\t\t\tdisplay: block;\r\n\t\t\tfloat: left;\r\n\t\t\tline-height: 100px;\r\n\t\t\tpadding: 0 25px;\r\n\t\t\tmargin: 0;\r\n\t\t\tfont-size: 16px;\r\n\t\t\tfont-weight: 600;\r\n\t\t\ttext-transform: uppercase;\t\r\n\t\t}\r\n\t}\r\n}"
+	],
+	"mappings": ";AEAA,AAAA,IAAI,CAAA;EACH,OAAO,EAAE,CAAE;EACX,MAAM,EAAE,CAAE;EACV,WAAW,EAAE,iCACb;CAAC;;;ACJF,AAAA,YAAY,CAAC;EACZ,UAAU,EAAE,KAAM;EAClB,KAAK,EAAE,IAAK;EACZ,gBAAgB,EAAE,4BAAG;EACrB,mBAAmB,EAAE,MAAO;EAC5B,iBAAiB,EAAE,SAAU;EAC7B,eAAe,EAAE,KAAM;EACvB,QAAQ,EAAE,QAAS;CAenB;;;AAtBD,AAAA,YAAY,AASV,OAAO,CAAA;EACP,OAAO,EAAC,EAAG;EACX,QAAQ,EAAE,QAAS;EACnB,GAAG,EAAC,CAAE;EACN,KAAK,EAAC,CAAE;EACR,MAAM,EAAE,IAAK;EACb,KAAK,EAAE,IAAK;EACZ,UAAU,EFdK,KAAI;EEehB,UAAU,EAAE,wDAAuB;EAAsC,2BAA2B;EACpG,UAAU,EAAE,mDAAkB;EAAsC,4BAA4B;EAChG,UAAU,EAAE,qDAAoB;EAAsC,2BAA2B;EACjG,UAAU,EAAE,gDAAe;EAAsC,qBAAqB;CACzF;;;ACrBF,AAAA,KAAK,CAAC;EACL,QAAQ,EAAE,KAAM;EAChB,QAAQ,EAAE,QAAS;EACnB,GAAG,EAAE,CAAE;EACP,IAAI,EAAE,CAAE;EACR,KAAK,EAAE,IAAK;EACZ,MAAM,EAAE,KAAM;EACd,OAAO,EAAE,CAAE;CAyBX;;;AAhCD,AAQC,KARI,CAQJ,WAAW,CAAA;EACV,OAAO,EAAE,MAAO;CAChB;;;AAVF,AAWC,KAXI,CAWJ,WAAW,CAAA;EACV,KAAK,EAAE,IAAK;EACZ,SAAS,EAAE,IAAK;EAChB,KAAK,EHPA,OAAO;EGQZ,WAAW,EAAE,GAAI;EACjB,WAAW,EAAE,KAAM;CACnB;;;AAjBF,AAkBC,KAlBI,CAkBJ,WAAW,CAAA;EACV,KAAK,EAAE,KAAM;EACb,MAAM,EAAE,CAAE;CAWV;;;AA/BF,AAqBE,KArBG,CAkBJ,WAAW,CAGV,UAAU,CAAA;EACT,OAAO,EAAE,KAAM;EACf,KAAK,EAAE,IAAK;EACZ,WAAW,EAAE,KAAM;EACnB,OAAO,EAAE,MAAO;EAChB,MAAM,EAAE,CAAE;EACV,SAAS,EAAE,IAAK;EAChB,WAAW,EAAE,GAAI;EACjB,cAAc,EAAE,SAAU;CAC1B",
+	"names": []
+}

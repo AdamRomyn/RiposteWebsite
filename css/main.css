@@ -1,0 +1,81 @@
+/* line 1, C:/Users/Adamr/Documents/My Web Sites/RiposteWebsite/sass/base/_defaults.scss */
+body {
+  padding: 0;
+  margin: 0;
+  font-family: lato, san-serif, 'segoe-ui-light';
+}
+
+/* line 1, C:/Users/Adamr/Documents/My Web Sites/RiposteWebsite/sass/components/_header.scss */
+.header-main {
+  min-height: 500px;
+  width: 100%;
+  background-image: url("../img/screenshot.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+/* line 10, C:/Users/Adamr/Documents/My Web Sites/RiposteWebsite/sass/components/_header.scss */
+.header-main::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  background: white;
+  background: -webkit-linear-gradient(white, rgba(255, 255, 255, 0.2));
+  /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(white, rgba(255, 255, 255, 0.2));
+  /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(white, rgba(255, 255, 255, 0.2));
+  /* For Firefox 3.6 to 15 */
+  background: linear-gradient(white, rgba(255, 255, 255, 0.2));
+  /* Standard syntax */
+}
+
+/* line 1, C:/Users/Adamr/Documents/My Web Sites/RiposteWebsite/sass/components/_navigation.scss */
+.menu {
+  position: fixed;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  z-index: 5;
+}
+
+/* line 9, C:/Users/Adamr/Documents/My Web Sites/RiposteWebsite/sass/components/_navigation.scss */
+.menu .menu-inner {
+  padding: 0 50px;
+}
+
+/* line 12, C:/Users/Adamr/Documents/My Web Sites/RiposteWebsite/sass/components/_navigation.scss */
+.menu .menu-title {
+  float: left;
+  font-size: 32px;
+  color: #444444;
+  font-weight: 400;
+  line-height: 100px;
+}
+
+/* line 19, C:/Users/Adamr/Documents/My Web Sites/RiposteWebsite/sass/components/_navigation.scss */
+.menu .menu-items {
+  float: right;
+  margin: 0;
+}
+
+/* line 22, C:/Users/Adamr/Documents/My Web Sites/RiposteWebsite/sass/components/_navigation.scss */
+.menu .menu-items .menu-item {
+  display: block;
+  float: left;
+  line-height: 100px;
+  padding: 0 25px;
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+/*# sourceMappingURL=../css/main.map */
