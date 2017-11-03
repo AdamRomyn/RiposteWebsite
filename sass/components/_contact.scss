@@ -1,0 +1,40 @@
+.contact{
+  text-align: center;
+  background: $grey;
+  display: flex;
+  width: 100%;
+  color: #efefef;
+  .contact-inner{
+    margin: 100px auto 100px;
+    form{
+      input,textarea, button{
+          background: none;
+          border: 4px solid $light-blue;
+          width: 600px;
+          text-transform: uppercase;
+          margin: 25px auto 0;
+          padding: 15px 30px;
+          font-family: lato;
+          font-size: 14px;
+          color: $white;
+          border-radius: 10px;
+          display: inline-block;
+          box-sizing:border-box;
+          &::placeholder{
+            color: #ccc;
+          }
+      }
+      button{
+        color: #ccc;
+      }
+      .form-group{
+
+        input{
+        }
+        textarea{
+          height: 300px;
+        }
+      }
+    }
+  }
+}

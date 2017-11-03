@@ -1,7 +1,86 @@
+$team-block:  #ccc;
+
 .team{
-  background: $light-blue;
+  background: $bg-grey;
+  text-align: center;
+  display: flex;
+  width: 100%;
   .team-inner{
     color: $grey;
+    width: 100%;
+    margin: 100px auto;
+    .team-blocks{
+      color: white;
+      .team-block-info,.team-block-image{
+        width: 25%;
+        float: left;
+        height: 400px;
+      }
+      .team-block-info{
+        opacity: 0.9;
+        background-color: $team-block;
+        display: table;
+        .blue{}
+        .info-inner{
+          display: table-cell;
+          vertical-align: middle;
+        }
+      }
+      .team-block-image{
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        position: relative;
+        &.image-adam{
+          background-image: url('../img/adam.png');
+          .triangle-container{
+              svg{
 
+                left: -5px;
+              }
+            }
+        }
+        &.image-dave{
+          background-image: url('../img/dave.jpg');
+          .triangle-container{
+              svg{
+
+                left: -5px;
+              }
+            }
+        }
+        &.image-liam{
+          background-image: url('../img/liam.jpg');
+          .triangle-container{
+              svg{
+
+                right: -5px;
+                  transform: rotate(-90deg);
+              }
+            }
+        }
+        &.image-eli{
+          background-image: url('../img/eli.jpg');
+          .triangle-container{
+              svg{
+                right: -5px;
+                  transform: rotate(-90deg);
+              }
+            }
+        }
+        .triangle-container{
+            svg{
+              position: absolute;
+              top: 50%;
+              transform: rotate(90deg);
+                opacity: 0.9;
+            }
+            .triangle{
+              fill: $team-block;
+            }
+          }
+        }
+
+    }
   }
 }

@@ -20,19 +20,45 @@
     	background: -moz-linear-gradient($white-gradient, $white-gradient-s); /* For Firefox 3.6 to 15 */
     	background: linear-gradient($white-gradient, $white-gradient-s); /* Standard syntax */
 	}
-	&::after{
-		content:'';
-		position: absolute;
-		bottom:-300px;
-		right: -500px;
-		height: 400px;
-		width: 300%;
-		background: $white;
-		transform: rotate(-6deg);
-		z-index:0;
-	}
+
 }
 
+.skew-line{
+	width: 100%;
+	overflow: hidden;
+	position: relative;
+	background: none;
+	&.sk1{
+		height: 300px;
+		margin-top: -350px;
+		&::after{
+			content:'';
+			position: absolute;
+			top: 200px;
+			right: -500px;
+			height: 400px;
+			width: 300%;
+			background: $white;
+			transform: rotate(-5deg);
+			z-index:0;
+		}
+	}
+	&.sk2{
+		background: $white;
+		height: 200px;
+		&::before{
+			content:'';
+			position: absolute;
+			bottom: -50px ;
+			right: -500px;
+			height: 200px;
+			width: 300%;
+			background: $light-orange;
+			transform: rotate(2deg);
+			z-index:0;
+		}
+	}
+}
 
 .about{
 	display: inline-block;
@@ -42,8 +68,11 @@
 	float: left;
 	width: 100%;
 	margin-bottom: 100px;
+	&::after{
+
+	}
 	.about-inner{
-		margin: -125px auto 0;
+		margin: -50px auto 0;
 		z-index: 999;
 		max-width: 768px;
 
@@ -60,4 +89,5 @@
 			line-height: 28px;
 		}
 	}
+
 }
