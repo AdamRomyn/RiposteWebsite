@@ -1,0 +1,26 @@
+.updates{
+  width: 100%;
+  background-color: $light-orange;
+  display: inline-block;
+  text-align: center;
+  .updates-inner{
+    margin: 100px auto;
+    color: $white;
+    p{
+			font-size: 18px;
+			line-height: 28px;
+		}
+    .update-blocks{
+      color: $grey;
+      display: flex;
+      .update-block{
+         background:  $white;
+         opacity: 0.9;
+         margin:10px 2.5% 0 2.5%;
+         flex-grow: 1;
+         display: inline-block;
+         width: calc(90% * (1/2));
+      }
+    }
+  }
+}

@@ -30,8 +30,8 @@
 		line-height: 100px;
 	}
 	.menu-logo{
-		width: 200px;
-		height: 160px;
+		width: 300px;
+		height: auto;
 	}
 	.menu-items{
 		float: right;
@@ -42,7 +42,7 @@
 			float: left;
 			line-height: $menu-height;
 			padding: 0 25px;
-			margin: 25px 0 0;
+			margin: 35px 0 0;
 			font-size: 18px;
 			font-weight: 600;
 			text-transform: uppercase;
