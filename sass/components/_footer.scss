@@ -1,0 +1,11 @@
+footer{
+  background: $x-light-blue;
+  display: flex;
+  text-align: center;
+  width: 100%;
+  color: $white;
+  .footer-inner{
+    margin: 25px 0;
+    width: 100%;
+  }
+}

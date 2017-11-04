@@ -39,7 +39,10 @@
 			height: 400px;
 			width: 300%;
 			background: $white;
-			transform: rotate(-5deg);
+			transform: rotate(-4deg);
+			@include breakpoint($lg){
+				transform: rotate(-5deg);
+			}
 			z-index:0;
 		}
 	}
