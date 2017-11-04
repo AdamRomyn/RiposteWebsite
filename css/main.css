@@ -21,9 +21,10 @@ body {
   background-size: cover;
   position: relative;
   display: inline-block;
+  transition: all 1.5s ease;
 }
 
-/* line 11, C:/Users/Adamr/Documents/My Web Sites/RiposteWebsite/sass/components/_header.scss */
+/* line 12, C:/Users/Adamr/Documents/My Web Sites/RiposteWebsite/sass/components/_header.scss */
 .header-main::before {
   content: '';
   position: absolute;
@@ -49,7 +50,12 @@ body {
   }
 }
 
-/* line 30, C:/Users/Adamr/Documents/My Web Sites/RiposteWebsite/sass/components/_header.scss */
+/* line 28, C:/Users/Adamr/Documents/My Web Sites/RiposteWebsite/sass/components/_header.scss */
+.header-main.expanded {
+  margin-top: 350px;
+}
+
+/* line 34, C:/Users/Adamr/Documents/My Web Sites/RiposteWebsite/sass/components/_header.scss */
 .skew-line {
   width: 100%;
   overflow: hidden;
@@ -57,13 +63,13 @@ body {
   background: none;
 }
 
-/* line 35, C:/Users/Adamr/Documents/My Web Sites/RiposteWebsite/sass/components/_header.scss */
+/* line 39, C:/Users/Adamr/Documents/My Web Sites/RiposteWebsite/sass/components/_header.scss */
 .skew-line.sk1 {
   height: 300px;
   margin-top: -350px;
 }
 
-/* line 38, C:/Users/Adamr/Documents/My Web Sites/RiposteWebsite/sass/components/_header.scss */
+/* line 42, C:/Users/Adamr/Documents/My Web Sites/RiposteWebsite/sass/components/_header.scss */
 .skew-line.sk1::after {
   content: '';
   position: absolute;
@@ -77,26 +83,26 @@ body {
 }
 
 @media screen and (max-width: 1200px) {
-  /* line 38, C:/Users/Adamr/Documents/My Web Sites/RiposteWebsite/sass/components/_header.scss */
+  /* line 42, C:/Users/Adamr/Documents/My Web Sites/RiposteWebsite/sass/components/_header.scss */
   .skew-line.sk1::after {
     transform: rotate(-5deg);
   }
 }
 
 @media screen and (max-width: 992px) {
-  /* line 38, C:/Users/Adamr/Documents/My Web Sites/RiposteWebsite/sass/components/_header.scss */
+  /* line 42, C:/Users/Adamr/Documents/My Web Sites/RiposteWebsite/sass/components/_header.scss */
   .skew-line.sk1::after {
     transform: rotate(-3deg);
   }
 }
 
-/* line 56, C:/Users/Adamr/Documents/My Web Sites/RiposteWebsite/sass/components/_header.scss */
+/* line 60, C:/Users/Adamr/Documents/My Web Sites/RiposteWebsite/sass/components/_header.scss */
 .skew-line.sk2 {
   background: #fff;
   height: 200px;
 }
 
-/* line 59, C:/Users/Adamr/Documents/My Web Sites/RiposteWebsite/sass/components/_header.scss */
+/* line 63, C:/Users/Adamr/Documents/My Web Sites/RiposteWebsite/sass/components/_header.scss */
 .skew-line.sk2::before {
   content: '';
   position: absolute;
@@ -109,7 +115,7 @@ body {
   z-index: 0;
 }
 
-/* line 73, C:/Users/Adamr/Documents/My Web Sites/RiposteWebsite/sass/components/_header.scss */
+/* line 77, C:/Users/Adamr/Documents/My Web Sites/RiposteWebsite/sass/components/_header.scss */
 .about {
   display: inline-block;
   position: relative;
@@ -120,7 +126,7 @@ body {
   margin-bottom: 100px;
 }
 
-/* line 84, C:/Users/Adamr/Documents/My Web Sites/RiposteWebsite/sass/components/_header.scss */
+/* line 88, C:/Users/Adamr/Documents/My Web Sites/RiposteWebsite/sass/components/_header.scss */
 .about .about-inner {
   margin: -50px auto 0;
   z-index: 999;
@@ -131,12 +137,12 @@ body {
   color: #444444;
 }
 
-/* line 92, C:/Users/Adamr/Documents/My Web Sites/RiposteWebsite/sass/components/_header.scss */
+/* line 96, C:/Users/Adamr/Documents/My Web Sites/RiposteWebsite/sass/components/_header.scss */
 .about .about-inner .game-icon {
   color: #444444;
 }
 
-/* line 98, C:/Users/Adamr/Documents/My Web Sites/RiposteWebsite/sass/components/_header.scss */
+/* line 102, C:/Users/Adamr/Documents/My Web Sites/RiposteWebsite/sass/components/_header.scss */
 .about .about-inner p {
   font-size: 18px;
   line-height: 28px;
@@ -187,18 +193,23 @@ body {
   cursor: pointer;
 }
 
+/* line 35, C:/Users/Adamr/Documents/My Web Sites/RiposteWebsite/sass/components/_navigation.scss */
+.menu .menu-inner .menu-wrapper .hamburger-icon.expanded {
+  color: #f59462;
+}
+
 @media screen and (max-width: 1200px) {
-  /* line 38, C:/Users/Adamr/Documents/My Web Sites/RiposteWebsite/sass/components/_navigation.scss */
+  /* line 41, C:/Users/Adamr/Documents/My Web Sites/RiposteWebsite/sass/components/_navigation.scss */
   .menu .menu-inner .menu-wrapper .hamburger-icon {
     display: block;
   }
-  /* line 41, C:/Users/Adamr/Documents/My Web Sites/RiposteWebsite/sass/components/_navigation.scss */
+  /* line 44, C:/Users/Adamr/Documents/My Web Sites/RiposteWebsite/sass/components/_navigation.scss */
   .menu .menu-inner .menu-wrapper .menu-items {
     display: none;
   }
 }
 
-/* line 47, C:/Users/Adamr/Documents/My Web Sites/RiposteWebsite/sass/components/_navigation.scss */
+/* line 50, C:/Users/Adamr/Documents/My Web Sites/RiposteWebsite/sass/components/_navigation.scss */
 .menu .menu-title {
   float: left;
   font-size: 32px;
@@ -207,7 +218,7 @@ body {
   line-height: 100px;
 }
 
-/* line 54, C:/Users/Adamr/Documents/My Web Sites/RiposteWebsite/sass/components/_navigation.scss */
+/* line 57, C:/Users/Adamr/Documents/My Web Sites/RiposteWebsite/sass/components/_navigation.scss */
 .menu .logo-wrapper {
   float: left;
   width: 25%;
@@ -216,7 +227,7 @@ body {
 }
 
 @media screen and (max-width: 1200px) {
-  /* line 54, C:/Users/Adamr/Documents/My Web Sites/RiposteWebsite/sass/components/_navigation.scss */
+  /* line 57, C:/Users/Adamr/Documents/My Web Sites/RiposteWebsite/sass/components/_navigation.scss */
   .menu .logo-wrapper {
     position: absolute;
     top: 25px;
@@ -226,20 +237,20 @@ body {
   }
 }
 
-/* line 66, C:/Users/Adamr/Documents/My Web Sites/RiposteWebsite/sass/components/_navigation.scss */
+/* line 69, C:/Users/Adamr/Documents/My Web Sites/RiposteWebsite/sass/components/_navigation.scss */
 .menu .logo-wrapper .menu-logo {
   width: 300px;
   height: auto;
 }
 
 @media screen and (max-width: 1200px) {
-  /* line 66, C:/Users/Adamr/Documents/My Web Sites/RiposteWebsite/sass/components/_navigation.scss */
+  /* line 69, C:/Users/Adamr/Documents/My Web Sites/RiposteWebsite/sass/components/_navigation.scss */
   .menu .logo-wrapper .menu-logo {
     width: 150px;
   }
 }
 
-/* line 75, C:/Users/Adamr/Documents/My Web Sites/RiposteWebsite/sass/components/_navigation.scss */
+/* line 78, C:/Users/Adamr/Documents/My Web Sites/RiposteWebsite/sass/components/_navigation.scss */
 .menu .menu-items {
   width: 65%;
   float: right;
@@ -248,13 +259,41 @@ body {
 }
 
 @media screen and (max-width: 1200px) {
-  /* line 75, C:/Users/Adamr/Documents/My Web Sites/RiposteWebsite/sass/components/_navigation.scss */
+  /* line 78, C:/Users/Adamr/Documents/My Web Sites/RiposteWebsite/sass/components/_navigation.scss */
   .menu .menu-items {
     display: none;
   }
 }
 
-/* line 83, C:/Users/Adamr/Documents/My Web Sites/RiposteWebsite/sass/components/_navigation.scss */
+/* line 86, C:/Users/Adamr/Documents/My Web Sites/RiposteWebsite/sass/components/_navigation.scss */
+.menu .menu-items.expanded {
+  display: block !important;
+  position: absolute;
+  top: -350px;
+  width: 100%;
+  padding: 0 0;
+  height: 350px;
+}
+
+/* line 93, C:/Users/Adamr/Documents/My Web Sites/RiposteWebsite/sass/components/_navigation.scss */
+.menu .menu-items.expanded .menu-item {
+  color: #AAA;
+  float: left;
+  width: 80%;
+  margin: auto 10%;
+  height: 69px;
+  line-height: 69px;
+  text-align: center;
+  z-index: -1;
+  border-bottom: 1px solid #AAA;
+}
+
+/* line 103, C:/Users/Adamr/Documents/My Web Sites/RiposteWebsite/sass/components/_navigation.scss */
+.menu .menu-items.expanded .menu-item:last-child {
+  border: 0;
+}
+
+/* line 108, C:/Users/Adamr/Documents/My Web Sites/RiposteWebsite/sass/components/_navigation.scss */
 .menu .menu-items .menu-item {
   color: #fff;
   display: block;
@@ -267,7 +306,14 @@ body {
   transition: color 1s ease;
 }
 
-/* line 93, C:/Users/Adamr/Documents/My Web Sites/RiposteWebsite/sass/components/_navigation.scss */
+@media screen and (max-width: 1200px) {
+  /* line 108, C:/Users/Adamr/Documents/My Web Sites/RiposteWebsite/sass/components/_navigation.scss */
+  .menu .menu-items .menu-item {
+    margin-top: 0;
+  }
+}
+
+/* line 121, C:/Users/Adamr/Documents/My Web Sites/RiposteWebsite/sass/components/_navigation.scss */
 .menu .menu-items .menu-item:hover {
   color: #f59462;
   cursor: pointer;

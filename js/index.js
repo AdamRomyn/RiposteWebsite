@@ -53,7 +53,27 @@ var check_animations = function(){
   }
 }
 
+//Menu click toggle
+$('.hamburger-icon').on('click',function(){
+  $('.hamburger-icon').toggleClass('expanded');
+  $('.menu-items').toggleClass('expanded');
+  $('.header-main').toggleClass('expanded');
+  //if($('.menu-items').hasClass('expanded')){
 
+  //}
+})
+
+$('ul').find('a').click(function(){
+    var href = $(this).attr('href');
+    var anchor = $(href).offset();
+    console.log(href + "     " + anchor);
+    $("html, body").animate({
+        scrollTop: $(anchor).offset().top
+      },
+      1000
+    );
+    return false;
+});
 //execute functions
 insert_current_year();
 add_os_class_to_body();

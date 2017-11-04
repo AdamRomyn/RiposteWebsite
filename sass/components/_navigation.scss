@@ -32,6 +32,9 @@
 						color: $light-orange;
 						cursor: pointer;
 					}
+					&.expanded{
+						color: $light-orange;
+					}
 				}
 				//border-bottom: 1px solid $white;
 				@include breakpoint($lg){
@@ -80,6 +83,28 @@
 		@include breakpoint($lg){
 			display: none;
 		}
+		&.expanded{
+			display: block !important;
+			position: absolute;
+			top: -$menu-mobile;
+			width: 100%;
+			padding: 0 0;
+			height: $menu-mobile;
+			.menu-item{
+				color: $grey2;
+				float: left;
+				width: 80%;
+				margin: auto 10%;
+				height: $menu-mobile/5-1px;
+				line-height: $menu-mobile/5-1px;
+				text-align: center;
+				z-index: -1;
+				border-bottom: 1px solid $grey2;
+				&:last-child{
+					border: 0;
+				}
+			}
+		}
 		.menu-item{
 			color: $white;
 			display: block;
@@ -90,6 +115,9 @@
 			font-weight: 600;
 			text-transform: uppercase;
 			transition: color 1s ease;
+			@include breakpoint($lg){
+				margin-top: 0;
+			}
 			&:hover{
 				color: $light-orange;
 				cursor: pointer;

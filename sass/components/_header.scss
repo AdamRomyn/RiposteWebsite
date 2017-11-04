@@ -8,6 +8,7 @@
 	background-size: cover;
 	position: relative;
 	display: inline-block;
+	transition: all 1.5s ease;
 	&::before{
 		content:'';
 		position: absolute;
@@ -23,6 +24,9 @@
 	}
 	@include breakpoint($md){
 		min-height: 400px;
+	}
+	&.expanded{
+		margin-top: 350px;
 	}
 
 }
