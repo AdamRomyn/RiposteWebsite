@@ -9,7 +9,7 @@
     form{
       input,textarea, button{
           background: none;
-          border: 4px solid $light-blue;
+          border: 2px solid $light-blue;
           width: 600px;
           text-transform: uppercase;
           margin: 25px auto 0;
@@ -22,6 +22,14 @@
           box-sizing:border-box;
           &::placeholder{
             color: #ccc;
+          }
+          &:focus{
+            outline: none;
+            border: 2px solid $white;
+            border-radius: 10px;
+            &::placeholder{
+              color: #fff;
+            }
           }
       }
       button{

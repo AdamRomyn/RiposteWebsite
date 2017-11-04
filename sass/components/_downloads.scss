@@ -1,0 +1,50 @@
+.downloads{
+  background-color: $light-blue;
+  width: 100%;
+  text-align: center;
+  color: $white;
+  display: flex;
+  width: 100%;
+
+  .downloads-inner{
+    margin: 50px auto;
+    .download-btn{
+      border: 2px solid $white;
+      display: inline-block;
+      border-radius: 10px;
+      padding: 20px 30px;
+      margin: auto 15px;
+      transition: all 1s ease;
+      color: $white;
+      &:hover{
+        border-color: $dark-blue;
+        color: $dark-blue;
+        background-color: $white;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.windows-downloads,.ios-downloads,.linux-downloads{
+  display: none;
+  width: 100%;
+}
+
+.windows{
+  .windows-downloads{
+    display: block;
+  }
+}
+
+.ios{
+  .ios-downloads{
+    display: block;
+  }
+}
+
+.linux,.unix{
+  .linux-downloads{
+    display: block;
+  }
+}
