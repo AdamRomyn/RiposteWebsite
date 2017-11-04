@@ -24,8 +24,8 @@
 				.hamburger-icon{
 					display: none;
 					position: absolute;
-					top: 50px;
-					right: 50px;
+					top: 80px;
+					right: 10%;
 					color: $white;
 					transition: all 1s ease;
 					&:hover{
@@ -55,9 +55,20 @@
 		float:left;
 		width: 25%;
 		min-width: 300px;
+		margin-top: 50px;
+		@include breakpoint($lg){
+			position: absolute;
+			top: 25px;
+			left: 10%;
+			float: none;
+			margin-top: 0;
+		}
 		.menu-logo{
 			width: 300px;
 			height: auto;
+			@include breakpoint($lg){
+				width: 150px;
+			}
 		}
 	}
 
@@ -73,9 +84,8 @@
 			color: $white;
 			display: block;
 			float: right;
-			line-height: $menu-height;
+			margin-top: $menu-height + 35px;
 			padding: 0 25px;
-			margin: 35px 0 0;
 			font-size: 16px;
 			font-weight: 600;
 			text-transform: uppercase;
