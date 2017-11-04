@@ -6,7 +6,8 @@ $ub-bar:  40px;
   display: inline-block;
   text-align: center;
   .updates-inner{
-    margin: 50px auto 150px;
+    margin: 0 auto 150px;
+    max-width: 1200px;
     color: $white;
     p{
 			font-size: 18px;
@@ -16,19 +17,37 @@ $ub-bar:  40px;
       color: $grey;
       display: flex;
       margin-top: 100px;
+      @include breakpoint($md){
+        margin-top: 50px;
+      }
       text-align: left;
+      flex-wrap: wrap;
       .update-block{
          background:  $white;
-         opacity: 0.9;
          margin:10px 2.5% 0 5%;
          flex-grow: 1;
-         display: inline-block;
          width: calc(85% * (1/2));
          position: relative;
-         padding: 20px 30px 50px;
+         padding: 20px 0 50px;
+         @include breakpoint($md){
+           width: 80%;
+           flex: 0 0 80%;
+            margin:90px 10% 0 10%;
+
+         }
          &:nth-child(2){
            margin:10px 5% 0 2.5%;
+           @include breakpoint($md){
+             margin:90px 10% 0 10%;
+           }
          }
+
+         .details,p{
+
+           padding-right: 30px;
+           padding-left: 30px;
+         }
+
          /*&::after{
            content: '';
            display: block;

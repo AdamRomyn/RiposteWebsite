@@ -15,12 +15,33 @@
 		max-width: 1200px;
 		margin: 0 auto;
 		width: 100%;
+		position: relative;
 		font-family: Questrial;
 		//border
 		.menu-wrapper{
 				width: 100%;
 				height: $menu-height;
+				.hamburger-icon{
+					display: none;
+					position: absolute;
+					top: 50px;
+					right: 50px;
+					color: $white;
+					transition: all 1s ease;
+					&:hover{
+						color: $light-orange;
+						cursor: pointer;
+					}
+				}
 				//border-bottom: 1px solid $white;
+				@include breakpoint($lg){
+					.hamburger-icon{
+						display: block;
+					}
+					.menu-items{
+						display: none;
+					}
+				}
 		}
 	}
 	.menu-title{

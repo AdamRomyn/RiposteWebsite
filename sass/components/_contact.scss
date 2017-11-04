@@ -3,14 +3,16 @@
   background: $grey;
   display: flex;
   width: 100%;
-  color: #aaa;
+  color: $grey2;
   .contact-inner{
+    width: 100%;
     margin: 100px auto 100px;
     form{
       input,textarea, button{
           background: none;
           border: 2px solid $light-blue;
-          width: 600px;
+          max-width: 600px;
+          width: 100%;
           text-transform: uppercase;
           margin: 25px auto 0;
           padding: 15px 30px;
@@ -20,6 +22,12 @@
           border-radius: 10px;
           display: inline-block;
           box-sizing:border-box;
+          transition: all 1s ease;
+          @include breakpoint($xs){
+            max-width: none;
+            width: 80%;
+            margin: 25px 10% 0;
+          }
           &::placeholder{
             color: #ccc;
           }
@@ -34,6 +42,12 @@
       }
       button{
         color: #ccc;
+        &:hover{
+          border-color: $blue;
+          background-color: $white;
+          color: $blue;
+          cursor: pointer;
+        }
       }
       .form-group{
 
@@ -41,6 +55,9 @@
         }
         textarea{
           height: 300px;
+          @include breakpoint($xs){
+            height: 225px;
+          }
         }
       }
     }
