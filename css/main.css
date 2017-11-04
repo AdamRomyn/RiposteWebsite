@@ -148,7 +148,7 @@ body {
   line-height: 28px;
 }
 
-/* line 3, C:/Users/Adamr/Documents/My Web Sites/RiposteWebsite/sass/components/_navigation.scss */
+/* line 1, C:/Users/Adamr/Documents/My Web Sites/RiposteWebsite/sass/components/_navigation.scss */
 .menu {
   position: fixed;
   position: absolute;
@@ -159,7 +159,7 @@ body {
   z-index: 5;
 }
 
-/* line 11, C:/Users/Adamr/Documents/My Web Sites/RiposteWebsite/sass/components/_navigation.scss */
+/* line 9, C:/Users/Adamr/Documents/My Web Sites/RiposteWebsite/sass/components/_navigation.scss */
 .menu .menu-inner {
   display: block;
   height: 160px;
@@ -171,13 +171,13 @@ body {
   font-family: Questrial;
 }
 
-/* line 21, C:/Users/Adamr/Documents/My Web Sites/RiposteWebsite/sass/components/_navigation.scss */
+/* line 19, C:/Users/Adamr/Documents/My Web Sites/RiposteWebsite/sass/components/_navigation.scss */
 .menu .menu-inner .menu-wrapper {
   width: 100%;
   height: 160px;
 }
 
-/* line 24, C:/Users/Adamr/Documents/My Web Sites/RiposteWebsite/sass/components/_navigation.scss */
+/* line 22, C:/Users/Adamr/Documents/My Web Sites/RiposteWebsite/sass/components/_navigation.scss */
 .menu .menu-inner .menu-wrapper .hamburger-icon {
   display: none;
   position: absolute;
@@ -185,31 +185,64 @@ body {
   right: 10%;
   color: #fff;
   transition: all 1s ease;
+  /* Rotate first bar */
 }
 
-/* line 31, C:/Users/Adamr/Documents/My Web Sites/RiposteWebsite/sass/components/_navigation.scss */
+/* line 29, C:/Users/Adamr/Documents/My Web Sites/RiposteWebsite/sass/components/_navigation.scss */
+.menu .menu-inner .menu-wrapper .hamburger-icon .bar1, .menu .menu-inner .menu-wrapper .hamburger-icon .bar2, .menu .menu-inner .menu-wrapper .hamburger-icon .bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: #fff;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+/* line 37, C:/Users/Adamr/Documents/My Web Sites/RiposteWebsite/sass/components/_navigation.scss */
+.menu .menu-inner .menu-wrapper .hamburger-icon.expanded {
+  /* Fade out the second bar */
+  /* Rotate last bar */
+}
+
+/* line 38, C:/Users/Adamr/Documents/My Web Sites/RiposteWebsite/sass/components/_navigation.scss */
+.menu .menu-inner .menu-wrapper .hamburger-icon.expanded .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-8px, 6px);
+  transform: rotate(-45deg) translate(-8px, 6px);
+}
+
+/* line 44, C:/Users/Adamr/Documents/My Web Sites/RiposteWebsite/sass/components/_navigation.scss */
+.menu .menu-inner .menu-wrapper .hamburger-icon.expanded .bar2 {
+  opacity: 0;
+}
+
+/* line 49, C:/Users/Adamr/Documents/My Web Sites/RiposteWebsite/sass/components/_navigation.scss */
+.menu .menu-inner .menu-wrapper .hamburger-icon.expanded .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
+}
+
+/* line 55, C:/Users/Adamr/Documents/My Web Sites/RiposteWebsite/sass/components/_navigation.scss */
 .menu .menu-inner .menu-wrapper .hamburger-icon:hover {
   color: #f59462;
   cursor: pointer;
 }
 
-/* line 35, C:/Users/Adamr/Documents/My Web Sites/RiposteWebsite/sass/components/_navigation.scss */
+/* line 59, C:/Users/Adamr/Documents/My Web Sites/RiposteWebsite/sass/components/_navigation.scss */
 .menu .menu-inner .menu-wrapper .hamburger-icon.expanded {
   color: #f59462;
 }
 
 @media screen and (max-width: 1200px) {
-  /* line 41, C:/Users/Adamr/Documents/My Web Sites/RiposteWebsite/sass/components/_navigation.scss */
+  /* line 65, C:/Users/Adamr/Documents/My Web Sites/RiposteWebsite/sass/components/_navigation.scss */
   .menu .menu-inner .menu-wrapper .hamburger-icon {
     display: block;
   }
-  /* line 44, C:/Users/Adamr/Documents/My Web Sites/RiposteWebsite/sass/components/_navigation.scss */
+  /* line 68, C:/Users/Adamr/Documents/My Web Sites/RiposteWebsite/sass/components/_navigation.scss */
   .menu .menu-inner .menu-wrapper .menu-items {
     display: none;
   }
 }
 
-/* line 50, C:/Users/Adamr/Documents/My Web Sites/RiposteWebsite/sass/components/_navigation.scss */
+/* line 74, C:/Users/Adamr/Documents/My Web Sites/RiposteWebsite/sass/components/_navigation.scss */
 .menu .menu-title {
   float: left;
   font-size: 32px;
@@ -218,7 +251,7 @@ body {
   line-height: 100px;
 }
 
-/* line 57, C:/Users/Adamr/Documents/My Web Sites/RiposteWebsite/sass/components/_navigation.scss */
+/* line 81, C:/Users/Adamr/Documents/My Web Sites/RiposteWebsite/sass/components/_navigation.scss */
 .menu .logo-wrapper {
   float: left;
   width: 25%;
@@ -227,7 +260,7 @@ body {
 }
 
 @media screen and (max-width: 1200px) {
-  /* line 57, C:/Users/Adamr/Documents/My Web Sites/RiposteWebsite/sass/components/_navigation.scss */
+  /* line 81, C:/Users/Adamr/Documents/My Web Sites/RiposteWebsite/sass/components/_navigation.scss */
   .menu .logo-wrapper {
     position: absolute;
     top: 25px;
@@ -237,20 +270,20 @@ body {
   }
 }
 
-/* line 69, C:/Users/Adamr/Documents/My Web Sites/RiposteWebsite/sass/components/_navigation.scss */
+/* line 93, C:/Users/Adamr/Documents/My Web Sites/RiposteWebsite/sass/components/_navigation.scss */
 .menu .logo-wrapper .menu-logo {
   width: 300px;
   height: auto;
 }
 
 @media screen and (max-width: 1200px) {
-  /* line 69, C:/Users/Adamr/Documents/My Web Sites/RiposteWebsite/sass/components/_navigation.scss */
+  /* line 93, C:/Users/Adamr/Documents/My Web Sites/RiposteWebsite/sass/components/_navigation.scss */
   .menu .logo-wrapper .menu-logo {
     width: 150px;
   }
 }
 
-/* line 78, C:/Users/Adamr/Documents/My Web Sites/RiposteWebsite/sass/components/_navigation.scss */
+/* line 102, C:/Users/Adamr/Documents/My Web Sites/RiposteWebsite/sass/components/_navigation.scss */
 .menu .menu-items {
   width: 65%;
   float: right;
@@ -259,42 +292,26 @@ body {
 }
 
 @media screen and (max-width: 1200px) {
-  /* line 78, C:/Users/Adamr/Documents/My Web Sites/RiposteWebsite/sass/components/_navigation.scss */
+  /* line 102, C:/Users/Adamr/Documents/My Web Sites/RiposteWebsite/sass/components/_navigation.scss */
   .menu .menu-items {
     display: none;
   }
 }
 
-/* line 86, C:/Users/Adamr/Documents/My Web Sites/RiposteWebsite/sass/components/_navigation.scss */
-.menu .menu-items.expanded {
-  display: block !important;
-  position: absolute;
-  top: -350px;
-  width: 100%;
-  padding: 0 0;
-  height: 350px;
+@media screen and (max-width: 1200px) {
+  /* line 110, C:/Users/Adamr/Documents/My Web Sites/RiposteWebsite/sass/components/_navigation.scss */
+  .menu .menu-items a {
+    width: 100%;
+    height: 70px;
+    display: block;
+  }
 }
 
-/* line 93, C:/Users/Adamr/Documents/My Web Sites/RiposteWebsite/sass/components/_navigation.scss */
-.menu .menu-items.expanded .menu-item {
-  color: #AAA;
-  float: left;
-  width: 80%;
-  margin: auto 10%;
-  height: 69px;
-  line-height: 69px;
-  text-align: center;
-  z-index: -1;
-  border-bottom: 1px solid #AAA;
-}
-
-/* line 103, C:/Users/Adamr/Documents/My Web Sites/RiposteWebsite/sass/components/_navigation.scss */
-.menu .menu-items.expanded .menu-item:last-child {
-  border: 0;
-}
-
-/* line 108, C:/Users/Adamr/Documents/My Web Sites/RiposteWebsite/sass/components/_navigation.scss */
-.menu .menu-items .menu-item {
+/* line 117, C:/Users/Adamr/Documents/My Web Sites/RiposteWebsite/sass/components/_navigation.scss */
+.menu .menu-items a .menu-item {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
   color: #fff;
   display: block;
   float: right;
@@ -307,16 +324,44 @@ body {
 }
 
 @media screen and (max-width: 1200px) {
-  /* line 108, C:/Users/Adamr/Documents/My Web Sites/RiposteWebsite/sass/components/_navigation.scss */
-  .menu .menu-items .menu-item {
+  /* line 117, C:/Users/Adamr/Documents/My Web Sites/RiposteWebsite/sass/components/_navigation.scss */
+  .menu .menu-items a .menu-item {
     margin-top: 0;
   }
 }
 
-/* line 121, C:/Users/Adamr/Documents/My Web Sites/RiposteWebsite/sass/components/_navigation.scss */
-.menu .menu-items .menu-item:hover {
+/* line 133, C:/Users/Adamr/Documents/My Web Sites/RiposteWebsite/sass/components/_navigation.scss */
+.menu .menu-items a .menu-item:hover {
   color: #f59462;
   cursor: pointer;
+}
+
+/* line 139, C:/Users/Adamr/Documents/My Web Sites/RiposteWebsite/sass/components/_navigation.scss */
+.menu .menu-items.expanded {
+  display: block !important;
+  position: absolute;
+  top: -350px;
+  width: 100%;
+  padding: 0 0;
+  height: 350px;
+}
+
+/* line 146, C:/Users/Adamr/Documents/My Web Sites/RiposteWebsite/sass/components/_navigation.scss */
+.menu .menu-items.expanded .menu-item {
+  color: #AAA;
+  float: left;
+  width: 80%;
+  margin: auto 10%;
+  height: 70px;
+  line-height: 70px;
+  text-align: center;
+  z-index: -1;
+  border-bottom: 1px solid #AAA;
+}
+
+/* line 158, C:/Users/Adamr/Documents/My Web Sites/RiposteWebsite/sass/components/_navigation.scss */
+.menu .menu-items.expanded a:last-child .menu-item {
+  border: 0;
 }
 
 /* line 3, C:/Users/Adamr/Documents/My Web Sites/RiposteWebsite/sass/components/_updates.scss */
