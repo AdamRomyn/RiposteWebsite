@@ -26,7 +26,7 @@
 		min-height: 400px;
 	}
 	&.expanded{
-		margin-top: 350px;
+		margin-top: 420px;
 	}
 
 }
@@ -82,6 +82,8 @@
 	float: left;
 	width: 100%;
 	margin-bottom: 100px;
+	margin-top: -50px;
+  padding-top: 50px;
 	&::after{
 
 	}

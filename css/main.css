@@ -52,7 +52,7 @@ body {
 
 /* line 28, C:/Users/Adamr/Documents/My Web Sites/RiposteWebsite/sass/components/_header.scss */
 .header-main.expanded {
-  margin-top: 350px;
+  margin-top: 420px;
 }
 
 /* line 34, C:/Users/Adamr/Documents/My Web Sites/RiposteWebsite/sass/components/_header.scss */
@@ -124,9 +124,11 @@ body {
   float: left;
   width: 100%;
   margin-bottom: 100px;
+  margin-top: -50px;
+  padding-top: 50px;
 }
 
-/* line 88, C:/Users/Adamr/Documents/My Web Sites/RiposteWebsite/sass/components/_header.scss */
+/* line 90, C:/Users/Adamr/Documents/My Web Sites/RiposteWebsite/sass/components/_header.scss */
 .about .about-inner {
   margin: -50px auto 0;
   z-index: 999;
@@ -137,12 +139,12 @@ body {
   color: #444444;
 }
 
-/* line 96, C:/Users/Adamr/Documents/My Web Sites/RiposteWebsite/sass/components/_header.scss */
+/* line 98, C:/Users/Adamr/Documents/My Web Sites/RiposteWebsite/sass/components/_header.scss */
 .about .about-inner .game-icon {
   color: #444444;
 }
 
-/* line 102, C:/Users/Adamr/Documents/My Web Sites/RiposteWebsite/sass/components/_header.scss */
+/* line 104, C:/Users/Adamr/Documents/My Web Sites/RiposteWebsite/sass/components/_header.scss */
 .about .about-inner p {
   font-size: 18px;
   line-height: 28px;
@@ -340,10 +342,10 @@ body {
 .menu .menu-items.expanded {
   display: block !important;
   position: absolute;
-  top: -350px;
+  top: -420px;
   width: 100%;
   padding: 0 0;
-  height: 350px;
+  height: 420px;
 }
 
 /* line 146, C:/Users/Adamr/Documents/My Web Sites/RiposteWebsite/sass/components/_navigation.scss */
@@ -366,26 +368,28 @@ body {
 
 /* line 3, C:/Users/Adamr/Documents/My Web Sites/RiposteWebsite/sass/components/_updates.scss */
 .updates {
+  margin-top: -50px;
+  padding-top: 50px;
   width: 100%;
   background-color: #f59462;
   display: inline-block;
   text-align: center;
 }
 
-/* line 8, C:/Users/Adamr/Documents/My Web Sites/RiposteWebsite/sass/components/_updates.scss */
+/* line 10, C:/Users/Adamr/Documents/My Web Sites/RiposteWebsite/sass/components/_updates.scss */
 .updates .updates-inner {
   margin: 0 auto 150px;
   max-width: 1200px;
   color: #fff;
 }
 
-/* line 12, C:/Users/Adamr/Documents/My Web Sites/RiposteWebsite/sass/components/_updates.scss */
+/* line 14, C:/Users/Adamr/Documents/My Web Sites/RiposteWebsite/sass/components/_updates.scss */
 .updates .updates-inner p {
   font-size: 18px;
   line-height: 28px;
 }
 
-/* line 16, C:/Users/Adamr/Documents/My Web Sites/RiposteWebsite/sass/components/_updates.scss */
+/* line 18, C:/Users/Adamr/Documents/My Web Sites/RiposteWebsite/sass/components/_updates.scss */
 .updates .updates-inner .update-blocks {
   color: #444444;
   display: flex;
@@ -395,13 +399,13 @@ body {
 }
 
 @media screen and (max-width: 992px) {
-  /* line 16, C:/Users/Adamr/Documents/My Web Sites/RiposteWebsite/sass/components/_updates.scss */
+  /* line 18, C:/Users/Adamr/Documents/My Web Sites/RiposteWebsite/sass/components/_updates.scss */
   .updates .updates-inner .update-blocks {
     margin-top: 50px;
   }
 }
 
-/* line 25, C:/Users/Adamr/Documents/My Web Sites/RiposteWebsite/sass/components/_updates.scss */
+/* line 27, C:/Users/Adamr/Documents/My Web Sites/RiposteWebsite/sass/components/_updates.scss */
 .updates .updates-inner .update-blocks .update-block {
   background: #fff;
   margin: 10px 2.5% 0 5%;
@@ -434,7 +438,7 @@ body {
 }
 
 @media screen and (max-width: 992px) {
-  /* line 25, C:/Users/Adamr/Documents/My Web Sites/RiposteWebsite/sass/components/_updates.scss */
+  /* line 27, C:/Users/Adamr/Documents/My Web Sites/RiposteWebsite/sass/components/_updates.scss */
   .updates .updates-inner .update-blocks .update-block {
     width: 80%;
     flex: 0 0 80%;
@@ -442,25 +446,25 @@ body {
   }
 }
 
-/* line 38, C:/Users/Adamr/Documents/My Web Sites/RiposteWebsite/sass/components/_updates.scss */
+/* line 40, C:/Users/Adamr/Documents/My Web Sites/RiposteWebsite/sass/components/_updates.scss */
 .updates .updates-inner .update-blocks .update-block:nth-child(2) {
   margin: 10px 5% 0 2.5%;
 }
 
 @media screen and (max-width: 992px) {
-  /* line 38, C:/Users/Adamr/Documents/My Web Sites/RiposteWebsite/sass/components/_updates.scss */
+  /* line 40, C:/Users/Adamr/Documents/My Web Sites/RiposteWebsite/sass/components/_updates.scss */
   .updates .updates-inner .update-blocks .update-block:nth-child(2) {
     margin: 90px 10% 0 10%;
   }
 }
 
-/* line 45, C:/Users/Adamr/Documents/My Web Sites/RiposteWebsite/sass/components/_updates.scss */
+/* line 47, C:/Users/Adamr/Documents/My Web Sites/RiposteWebsite/sass/components/_updates.scss */
 .updates .updates-inner .update-blocks .update-block .details, .updates .updates-inner .update-blocks .update-block p {
   padding-right: 30px;
   padding-left: 30px;
 }
 
-/* line 73, C:/Users/Adamr/Documents/My Web Sites/RiposteWebsite/sass/components/_updates.scss */
+/* line 75, C:/Users/Adamr/Documents/My Web Sites/RiposteWebsite/sass/components/_updates.scss */
 .updates .updates-inner .update-blocks .update-block h2 {
   display: block;
   width: 60%;
@@ -475,7 +479,7 @@ body {
   padding: 25px 30px 0;
 }
 
-/* line 86, C:/Users/Adamr/Documents/My Web Sites/RiposteWebsite/sass/components/_updates.scss */
+/* line 88, C:/Users/Adamr/Documents/My Web Sites/RiposteWebsite/sass/components/_updates.scss */
 .updates .updates-inner .update-blocks .update-block .details {
   margin-top: 25px;
   text-align: left;
@@ -483,19 +487,65 @@ body {
   display: inline-block;
 }
 
-/* line 91, C:/Users/Adamr/Documents/My Web Sites/RiposteWebsite/sass/components/_updates.scss */
+/* line 93, C:/Users/Adamr/Documents/My Web Sites/RiposteWebsite/sass/components/_updates.scss */
 .updates .updates-inner .update-blocks .update-block .details .detail {
   float: left;
 }
 
-/* line 93, C:/Users/Adamr/Documents/My Web Sites/RiposteWebsite/sass/components/_updates.scss */
+/* line 95, C:/Users/Adamr/Documents/My Web Sites/RiposteWebsite/sass/components/_updates.scss */
 .updates .updates-inner .update-blocks .update-block .details .detail i {
   margin-right: 10px;
 }
 
-/* line 96, C:/Users/Adamr/Documents/My Web Sites/RiposteWebsite/sass/components/_updates.scss */
+/* line 98, C:/Users/Adamr/Documents/My Web Sites/RiposteWebsite/sass/components/_updates.scss */
 .updates .updates-inner .update-blocks .update-block .details .detail span {
   color: #AAA;
+}
+
+/* line 1, C:/Users/Adamr/Documents/My Web Sites/RiposteWebsite/sass/components/_gameplay.scss */
+.gameplay {
+  position: relative;
+  overflow: hidden;
+}
+
+/* line 7, C:/Users/Adamr/Documents/My Web Sites/RiposteWebsite/sass/components/_gameplay.scss */
+.gameplay .overlay {
+  padding: 50px 0;
+  width: 35%;
+  display: inline-block;
+  background-image: linear-gradient(-180deg, #f59462 0%, rgba(255, 255, 255, 0) 100%);
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin-left: -17.5%;
+  text-align: center;
+  color: #fff;
+}
+
+@media screen and (max-width: 767px) {
+  /* line 21, C:/Users/Adamr/Documents/My Web Sites/RiposteWebsite/sass/components/_gameplay.scss */
+  .gameplay .overlay i {
+    font-size: 56px;
+  }
+  /* line 24, C:/Users/Adamr/Documents/My Web Sites/RiposteWebsite/sass/components/_gameplay.scss */
+  .gameplay .overlay h2 {
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  /* line 7, C:/Users/Adamr/Documents/My Web Sites/RiposteWebsite/sass/components/_gameplay.scss */
+  .gameplay .overlay {
+    padding: 25px 0;
+  }
+  /* line 31, C:/Users/Adamr/Documents/My Web Sites/RiposteWebsite/sass/components/_gameplay.scss */
+  .gameplay .overlay i {
+    font-size: 46px;
+  }
+  /* line 34, C:/Users/Adamr/Documents/My Web Sites/RiposteWebsite/sass/components/_gameplay.scss */
+  .gameplay .overlay h2 {
+    font-size: 18px;
+  }
 }
 
 /* line 3, C:/Users/Adamr/Documents/My Web Sites/RiposteWebsite/sass/components/_team.scss */

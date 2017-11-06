@@ -1,0 +1,40 @@
+.gameplay{
+  position: relative;
+  video{
+    //z-index: -1;
+  }
+  overflow: hidden;
+  .overlay{
+    padding: 50px 0;
+    width: 35%;
+    display: inline-block;
+    background-image: linear-gradient(-180deg, $light-orange 0%, rgba(255,255,255,0) 100%);
+    //background-image: radial-gradient(circle at top, $light-orange 60%, rgba(255,255,255,0) 100%);
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -17.5%;
+    //z-index: 50;
+    text-align: center;
+    color: $white;
+    @include breakpoint($xs){
+      i{
+          font-size: 56px;
+      }
+      h2{
+        font-size: 24px;
+      }
+    }
+
+    @include breakpoint($xxs){
+      padding: 25px 0;
+      i{
+          font-size: 46px;
+      }
+      h2{
+        font-size: 18px;
+      }
+    }
+
+  }
+}
