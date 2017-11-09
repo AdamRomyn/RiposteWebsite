@@ -517,24 +517,39 @@ body {
 
 /* line 7, C:/Users/Adamr/Documents/My Web Sites/RiposteWebsite/sass/components/_gameplay.scss */
 .gameplay .overlay {
-  padding: 50px 0;
-  width: 35%;
+  padding: 25px 0;
+  width: 25%;
   display: inline-block;
   background-image: linear-gradient(-180deg, #f59462 0%, rgba(255, 255, 255, 0) 100%);
   position: absolute;
   top: 0;
   left: 50%;
-  margin-left: -17.5%;
+  margin-left: -12.5%;
   text-align: center;
   color: #fff;
 }
 
+/* line 20, C:/Users/Adamr/Documents/My Web Sites/RiposteWebsite/sass/components/_gameplay.scss */
+.gameplay .overlay i, .gameplay .overlay h2 {
+  opacity: 0.5;
+}
+
+/* line 23, C:/Users/Adamr/Documents/My Web Sites/RiposteWebsite/sass/components/_gameplay.scss */
+.gameplay .overlay i {
+  font-size: 56px;
+}
+
+/* line 26, C:/Users/Adamr/Documents/My Web Sites/RiposteWebsite/sass/components/_gameplay.scss */
+.gameplay .overlay h2 {
+  font-size: 28px;
+}
+
 @media screen and (max-width: 767px) {
-  /* line 21, C:/Users/Adamr/Documents/My Web Sites/RiposteWebsite/sass/components/_gameplay.scss */
+  /* line 30, C:/Users/Adamr/Documents/My Web Sites/RiposteWebsite/sass/components/_gameplay.scss */
   .gameplay .overlay i {
-    font-size: 56px;
+    font-size: 46px;
   }
-  /* line 24, C:/Users/Adamr/Documents/My Web Sites/RiposteWebsite/sass/components/_gameplay.scss */
+  /* line 33, C:/Users/Adamr/Documents/My Web Sites/RiposteWebsite/sass/components/_gameplay.scss */
   .gameplay .overlay h2 {
     font-size: 24px;
   }
@@ -545,11 +560,11 @@ body {
   .gameplay .overlay {
     padding: 25px 0;
   }
-  /* line 31, C:/Users/Adamr/Documents/My Web Sites/RiposteWebsite/sass/components/_gameplay.scss */
+  /* line 40, C:/Users/Adamr/Documents/My Web Sites/RiposteWebsite/sass/components/_gameplay.scss */
   .gameplay .overlay i {
-    font-size: 46px;
+    font-size: 36px;
   }
-  /* line 34, C:/Users/Adamr/Documents/My Web Sites/RiposteWebsite/sass/components/_gameplay.scss */
+  /* line 43, C:/Users/Adamr/Documents/My Web Sites/RiposteWebsite/sass/components/_gameplay.scss */
   .gameplay .overlay h2 {
     font-size: 18px;
   }
@@ -922,6 +937,181 @@ footer {
 footer .footer-inner {
   margin: 25px 0;
   width: 100%;
+}
+
+/* line 1, C:/Users/Adamr/Documents/My Web Sites/RiposteWebsite/sass/components/_media.scss */
+.media {
+  display: inline-block;
+  width: 100%;
+}
+
+/* line 4, C:/Users/Adamr/Documents/My Web Sites/RiposteWebsite/sass/components/_media.scss */
+.media .media-inner {
+  width: 100%;
+}
+
+/* line 6, C:/Users/Adamr/Documents/My Web Sites/RiposteWebsite/sass/components/_media.scss */
+.media .media-inner .media-box {
+  width: 100%;
+  float: left;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: contain;
+  background-color: #eee;
+  position: relative;
+  overflow: hidden;
+  height: 420px;
+}
+
+@media screen and (max-width: 768px) {
+  /* line 6, C:/Users/Adamr/Documents/My Web Sites/RiposteWebsite/sass/components/_media.scss */
+  .media .media-inner .media-box {
+    height: auto;
+  }
+}
+
+/* line 20, C:/Users/Adamr/Documents/My Web Sites/RiposteWebsite/sass/components/_media.scss */
+.media .media-inner .media-box .m-image {
+  position: absolute;
+  top: 0;
+  display: inline-block;
+  height: 420px;
+  width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  /* line 20, C:/Users/Adamr/Documents/My Web Sites/RiposteWebsite/sass/components/_media.scss */
+  .media .media-inner .media-box .m-image {
+    position: relative;
+    float: left;
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* line 33, C:/Users/Adamr/Documents/My Web Sites/RiposteWebsite/sass/components/_media.scss */
+.media .media-inner .media-box .info {
+  float: left;
+  max-width: 30%;
+  z-index: 10;
+  position: relative;
+  padding: 30px 50px;
+}
+
+@media screen and (max-width: 768px) {
+  /* line 33, C:/Users/Adamr/Documents/My Web Sites/RiposteWebsite/sass/components/_media.scss */
+  .media .media-inner .media-box .info {
+    padding: 0;
+    width: 100%;
+    display: inline-block;
+    height: auto;
+    max-width: 100%;
+    text-align: center !important;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}
+
+/* line 49, C:/Users/Adamr/Documents/My Web Sites/RiposteWebsite/sass/components/_media.scss */
+.media .media-inner .media-box .info p {
+  font-size: 20px;
+  font-weight: 300;
+}
+
+@media screen and (max-width: 768px) {
+  /* line 49, C:/Users/Adamr/Documents/My Web Sites/RiposteWebsite/sass/components/_media.scss */
+  .media .media-inner .media-box .info p {
+    padding: 25px 15%;
+  }
+}
+
+/* line 56, C:/Users/Adamr/Documents/My Web Sites/RiposteWebsite/sass/components/_media.scss */
+.media .media-inner .media-box .info::after {
+  content: '';
+  display: block;
+  width: 200%;
+  height: 500px;
+  background: #eee;
+  position: absolute;
+  top: 0;
+  z-index: -1;
+}
+
+@media screen and (max-width: 768px) {
+  /* line 56, C:/Users/Adamr/Documents/My Web Sites/RiposteWebsite/sass/components/_media.scss */
+  .media .media-inner .media-box .info::after {
+    display: none;
+  }
+}
+
+/* line 71, C:/Users/Adamr/Documents/My Web Sites/RiposteWebsite/sass/components/_media.scss */
+.media .media-inner .media-box img {
+  width: auto;
+  height: 420px;
+  float: right;
+  display: block;
+  max-width: 70%;
+}
+
+@media screen and (max-width: 768px) {
+  /* line 71, C:/Users/Adamr/Documents/My Web Sites/RiposteWebsite/sass/components/_media.scss */
+  .media .media-inner .media-box img {
+    max-width: 100%;
+  }
+}
+
+/* line 83, C:/Users/Adamr/Documents/My Web Sites/RiposteWebsite/sass/components/_media.scss */
+.media .media-inner .media-box:nth-child(2n-1) .info::after {
+  right: -100%;
+  transform: rotate(85deg);
+}
+
+@media screen and (max-width: 992px) {
+  /* line 83, C:/Users/Adamr/Documents/My Web Sites/RiposteWebsite/sass/components/_media.scss */
+  .media .media-inner .media-box:nth-child(2n-1) .info::after {
+    left: -30%;
+  }
+}
+
+/* line 91, C:/Users/Adamr/Documents/My Web Sites/RiposteWebsite/sass/components/_media.scss */
+.media .media-inner .media-box:nth-child(2n-1) .m-image {
+  left: 0;
+}
+
+/* line 96, C:/Users/Adamr/Documents/My Web Sites/RiposteWebsite/sass/components/_media.scss */
+.media .media-inner .media-box:nth-child(2n) {
+  background-color: #5e8e96;
+}
+
+/* line 98, C:/Users/Adamr/Documents/My Web Sites/RiposteWebsite/sass/components/_media.scss */
+.media .media-inner .media-box:nth-child(2n) .info {
+  float: right;
+  text-align: right;
+  color: #fff;
+}
+
+/* line 102, C:/Users/Adamr/Documents/My Web Sites/RiposteWebsite/sass/components/_media.scss */
+.media .media-inner .media-box:nth-child(2n) .info::after {
+  background-color: #5e8e96;
+  left: -100%;
+  transform: rotate(-85deg);
+}
+
+@media screen and (max-width: 992px) {
+  /* line 102, C:/Users/Adamr/Documents/My Web Sites/RiposteWebsite/sass/components/_media.scss */
+  .media .media-inner .media-box:nth-child(2n) .info::after {
+    left: -30%;
+  }
+}
+
+/* line 112, C:/Users/Adamr/Documents/My Web Sites/RiposteWebsite/sass/components/_media.scss */
+.media .media-inner .media-box:nth-child(2n) .m-image {
+  right: 0;
+}
+
+/* line 116, C:/Users/Adamr/Documents/My Web Sites/RiposteWebsite/sass/components/_media.scss */
+.media .media-inner .media-box:nth-child(2n) img {
+  float: left;
 }
 
 /*# sourceMappingURL=../css/main.map */

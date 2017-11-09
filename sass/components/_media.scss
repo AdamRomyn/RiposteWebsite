@@ -1,0 +1,129 @@
+.media{
+  display: inline-block;
+  width: 100%;
+  .media-inner{
+    width: 100%;
+    .media-box{
+      width: 100%;
+      float: left;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: contain;
+      background-color: #eee;
+      position: relative;
+      overflow: hidden;
+      height: 420px;
+      @include breakpoint($sm){
+        height: auto;
+      }
+
+      .m-image{
+          position: absolute;
+          top: 0;
+          display: inline-block;
+          height: 420px;
+          width: 100%;
+          @include breakpoint($sm){
+            position: relative;
+            float: left;
+            width: 100%;
+            height: auto;
+          }
+      }
+      .info{
+        float: left;
+        max-width: 30%;
+        z-index: 10;
+        position: relative;
+        padding: 30px 50px;
+        @include breakpoint($sm){
+          padding: 0;
+          width: 100%;
+          display: inline-block;
+          height: auto;
+          max-width: 100%;
+          text-align: center !important;
+          padding-top: 50px;
+          padding-bottom: 50px;
+        }
+        p{
+          font-size: 20px;
+          font-weight: 300;
+          @include breakpoint($sm){
+            padding: 25px 15%;
+          }
+        }
+        &::after{
+          content:'';
+          display: block;
+          width: 200%;
+          height: 500px;
+          background: #eee;
+          position: absolute;
+          top: 0;
+          z-index: -1;
+          @include breakpoint($sm){
+            display: none;
+          }
+
+        }
+      }
+      img{
+        width: auto;
+        height: 420px;
+        float: right;
+        display: block;
+        max-width: 70%;
+        @include breakpoint($sm){
+          max-width: 100%;
+        }
+      }
+      &:nth-child(2n-1){
+        .info {
+          &::after{
+            right: -100%;
+            transform: rotate(85deg);
+            @include breakpoint($md){
+              left: -30%;
+            }
+          }
+        }
+        .m-image{
+            left: 0;
+
+        }
+      }
+      &:nth-child(2n){
+        background-color: $light-blue;
+        .info{
+          float: right;
+          text-align: right;
+          color: $white;
+          &::after{
+            background-color: $light-blue;
+            left: -100%;
+            transform: rotate(-85deg);
+            @include breakpoint($md){
+              left: -30%;
+            }
+
+          }
+        }
+        .m-image{
+            right: 0;
+
+        }
+        img{
+          float: left;
+
+        }
+
+      }
+    }
+  }
+}
+//<img src="img/Gameplay2.png" class="media-image" />
+//<img src="img/Gameplay3.png" class="media-image" />
+//<img src="img/MainMenu.png" class="media-image" />
+//<img src="img/Multiplayer.png" class="media-image" />
+//<img src="img/Settings.png" class="media-image" />
